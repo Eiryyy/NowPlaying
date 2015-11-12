@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20D0D5E11BF498CA0017FBCF /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D0D5DF1BF498CA0017FBCF /* QuotesViewController.swift */; };
+		20D0D5E21BF498CA0017FBCF /* QuotesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20D0D5E01BF498CA0017FBCF /* QuotesViewController.xib */; };
+		20D0D5E41BF49BF50017FBCF /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D0D5E31BF49BF50017FBCF /* EventMonitor.swift */; };
 		20DF72721BF3A87A00E7ECC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DF72711BF3A87A00E7ECC5 /* AppDelegate.swift */; };
 		20DF72741BF3A87A00E7ECC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20DF72731BF3A87A00E7ECC5 /* Assets.xcassets */; };
 		20DF72771BF3A87A00E7ECC5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20DF72751BF3A87A00E7ECC5 /* MainMenu.xib */; };
@@ -32,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20D0D5DF1BF498CA0017FBCF /* QuotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
+		20D0D5E01BF498CA0017FBCF /* QuotesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuotesViewController.xib; sourceTree = "<group>"; };
+		20D0D5E31BF49BF50017FBCF /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
 		20DF726E1BF3A87A00E7ECC5 /* NowPlaying.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NowPlaying.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20DF72711BF3A87A00E7ECC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20DF72731BF3A87A00E7ECC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -94,6 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				20DF72711BF3A87A00E7ECC5 /* AppDelegate.swift */,
+				20D0D5E31BF49BF50017FBCF /* EventMonitor.swift */,
+				20D0D5DF1BF498CA0017FBCF /* QuotesViewController.swift */,
+				20D0D5E01BF498CA0017FBCF /* QuotesViewController.xib */,
 				20DF72731BF3A87A00E7ECC5 /* Assets.xcassets */,
 				20DF72751BF3A87A00E7ECC5 /* MainMenu.xib */,
 				20DF72781BF3A87A00E7ECC5 /* Info.plist */,
@@ -223,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20D0D5E21BF498CA0017FBCF /* QuotesViewController.xib in Resources */,
 				20DF72741BF3A87A00E7ECC5 /* Assets.xcassets in Resources */,
 				20DF72771BF3A87A00E7ECC5 /* MainMenu.xib in Resources */,
 			);
@@ -249,7 +259,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20D0D5E41BF49BF50017FBCF /* EventMonitor.swift in Sources */,
 				20DF72721BF3A87A00E7ECC5 /* AppDelegate.swift in Sources */,
+				20D0D5E11BF498CA0017FBCF /* QuotesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +483,7 @@
 				20DF72931BF3A87A00E7ECC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20DF72941BF3A87A00E7ECC5 /* Build configuration list for PBXNativeTarget "NowPlayingTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +492,7 @@
 				20DF72961BF3A87A00E7ECC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20DF72971BF3A87A00E7ECC5 /* Build configuration list for PBXNativeTarget "NowPlayingUITests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +501,7 @@
 				20DF72991BF3A87A00E7ECC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
