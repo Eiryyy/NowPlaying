@@ -10,6 +10,7 @@
 		20D0D5E11BF498CA0017FBCF /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D0D5DF1BF498CA0017FBCF /* QuotesViewController.swift */; };
 		20D0D5E21BF498CA0017FBCF /* QuotesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20D0D5E01BF498CA0017FBCF /* QuotesViewController.xib */; };
 		20D0D5E41BF49BF50017FBCF /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D0D5E31BF49BF50017FBCF /* EventMonitor.swift */; };
+		20D0D5E61BF49FB10017FBCF /* TrackInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D0D5E51BF49FB10017FBCF /* TrackInfoController.swift */; };
 		20DF72721BF3A87A00E7ECC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DF72711BF3A87A00E7ECC5 /* AppDelegate.swift */; };
 		20DF72741BF3A87A00E7ECC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20DF72731BF3A87A00E7ECC5 /* Assets.xcassets */; };
 		20DF72771BF3A87A00E7ECC5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20DF72751BF3A87A00E7ECC5 /* MainMenu.xib */; };
@@ -38,6 +39,7 @@
 		20D0D5DF1BF498CA0017FBCF /* QuotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
 		20D0D5E01BF498CA0017FBCF /* QuotesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuotesViewController.xib; sourceTree = "<group>"; };
 		20D0D5E31BF49BF50017FBCF /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
+		20D0D5E51BF49FB10017FBCF /* TrackInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackInfoController.swift; sourceTree = "<group>"; };
 		20DF726E1BF3A87A00E7ECC5 /* NowPlaying.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NowPlaying.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20DF72711BF3A87A00E7ECC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20DF72731BF3A87A00E7ECC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				20DF72711BF3A87A00E7ECC5 /* AppDelegate.swift */,
 				20D0D5E31BF49BF50017FBCF /* EventMonitor.swift */,
 				20D0D5DF1BF498CA0017FBCF /* QuotesViewController.swift */,
+				20D0D5E51BF49FB10017FBCF /* TrackInfoController.swift */,
 				20D0D5E01BF498CA0017FBCF /* QuotesViewController.xib */,
 				20DF72731BF3A87A00E7ECC5 /* Assets.xcassets */,
 				20DF72751BF3A87A00E7ECC5 /* MainMenu.xib */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20D0D5E41BF49BF50017FBCF /* EventMonitor.swift in Sources */,
+				20D0D5E61BF49FB10017FBCF /* TrackInfoController.swift in Sources */,
 				20DF72721BF3A87A00E7ECC5 /* AppDelegate.swift in Sources */,
 				20D0D5E11BF498CA0017FBCF /* QuotesViewController.swift in Sources */,
 			);

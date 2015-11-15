@@ -1,18 +1,31 @@
-//
-//  QuotesViewController.swift
-//  NowPlaying
-//
-//  Created by Tsukasa on 2015/11/12.
-//  Copyright © 2015年 Tsukasa Kawagishi. All rights reserved.
-//
-
 import Cocoa
 
-class QuotesViewController: NSViewController {
+class QuotesViewController: NSViewController, TrackInfoDelegate {
 
+    var trackInfoController = TrackInfoController()
+    @IBOutlet weak var artistLabel: NSTextField!
+    @IBOutlet weak var nameLabel: NSTextField!
+    @IBOutlet weak var albumLabel: NSTextField!
+    @IBOutlet weak var tweetButon: NSButton!
+    
+    @IBAction func buttonClicked (sender: AnyObject) {
+        let sharingService = NSSharingService(named: NSSharingServiceNamePostOnTwitter)
+        let trackInfo = trackInfoController.getInfo()
+        let text = trackInfo["name"]! + " / " + trackInfo["artist"]! + " #nowplaying"
+        sharingService?.performWithItems([text])
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
+        trackInfoController.delegate = self
+        NSDistributedNotificationCenter.defaultCenter().addObserver(trackInfoController, selector: "onPlay:", name: "com.apple.iTunes.playerInfo", object: nil)
+        updateTrackInfo(trackInfoController.getInfo())
+    }
+    
+    func updateTrackInfo(info: Dictionary<String, String>) {
+        artistLabel.stringValue = info["artist"]!
+        nameLabel.stringValue = info["name"]!
+        albumLabel.stringValue = info["album"]!
     }
     
 }

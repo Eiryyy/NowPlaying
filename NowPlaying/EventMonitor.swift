@@ -1,11 +1,3 @@
-//
-//  EventMonitor.swift
-//  NowPlaying
-//
-//  Created by Tsukasa on 2015/11/12.
-//  Copyright © 2015年 Tsukasa Kawagishi. All rights reserved.
-//
-
 import Cocoa
 
 public class EventMonitor {
