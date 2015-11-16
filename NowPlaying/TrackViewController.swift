@@ -1,6 +1,6 @@
 import Cocoa
 
-class QuotesViewController: NSViewController, TrackInfoDelegate {
+class TrackViewController: NSViewController, TrackInfoDelegate {
 
     var trackInfoController = TrackInfoController()
     @IBOutlet weak var artistLabel: NSTextField!

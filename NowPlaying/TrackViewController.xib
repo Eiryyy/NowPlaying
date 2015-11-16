@@ -5,11 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9060"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="QuotesViewController" customModule="NowPlaying" customModuleProvider="target">
+        <customObject id="-2" userLabel="File's Owner" customClass="TrackViewController" customModule="NowPlaying" customModuleProvider="target">
             <connections>
                 <outlet property="albumLabel" destination="I4R-4L-apu" id="kkc-83-1cg"/>
                 <outlet property="artistLabel" destination="98h-qG-2Av" id="768-O7-sUd"/>
-                <outlet property="nameLabel" destination="Ibl-iU-ni8" id="mAB-ep-94g"/>
+                <outlet property="nameLabel" destination="Ibl-iU-ni8" id="5NL-ci-jn0"/>
                 <outlet property="tweetButon" destination="06o-mR-XLD" id="Ufc-uI-EjS"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>

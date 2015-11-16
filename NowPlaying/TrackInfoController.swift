@@ -7,9 +7,9 @@ protocol TrackInfoDelegate: class {
 class TrackInfoController: NSObject {
     var delegate: TrackInfoDelegate! = nil
     private var store: Dictionary<String,String> = [
-            "artist": "none",
-            "name": "none",
-            "album": "none"
+            "artist": "No artist",
+            "name": "No name",
+            "album": "No album"
         ]
     override init() {
         let appleScript = "tell application \"iTunes\"\n"
@@ -28,9 +28,9 @@ class TrackInfoController: NSObject {
         }
     }
     func onPlay (notification: NSNotification?) {
-        self.store["artist"] = notification?.userInfo?["Artist"] as? String ?? "none"
-        self.store["name"] = notification?.userInfo?["Name"] as? String ?? "none"
-        self.store["album"] = notification?.userInfo?["Album"] as? String ?? "none"
+        self.store["artist"] = notification?.userInfo?["Artist"] as? String ?? "No artist"
+        self.store["name"] = notification?.userInfo?["Name"] as? String ?? "No name"
+        self.store["album"] = notification?.userInfo?["Album"] as? String ?? "No album"
         delegate.updateTrackInfo(self.store)
     }
     

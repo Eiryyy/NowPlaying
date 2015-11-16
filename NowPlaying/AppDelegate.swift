@@ -14,7 +14,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             button.image = NSImage(named: "StatusBarButtonImage")
             button.action = Selector("togglePopover:")
         }
-        popover.contentViewController = QuotesViewController(nibName: "QuotesViewController", bundle: nil)
+        popover.contentViewController = TrackViewController(nibName: "TrackViewController", bundle: nil)
         
         eventMonitor = EventMonitor(mask: [.LeftMouseDownMask, .RightMouseDownMask]) { [unowned self] event in
             if self.popover.shown {
